@@ -32,6 +32,7 @@ my_menu1.pack(pady=20)
 inside_menu1 = tb.Menu(my_menu1)
 
 # Adding Items
+
 item_var = StringVar()
 for x in ['primary', 'secondary', 'danger', 'info', 'outline primary', 'outline secondary', 'outline danger', 'outline info']:
 	inside_menu1.add_radiobutton(label=x, variable=item_var, command=lambda x=x: stuff(x))

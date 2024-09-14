@@ -27,7 +27,13 @@ my_combo.pack()
 # Button Command
 label_changer = tb.Label(text="", font=("Helvetica", 50), bootstyle="info")
 label_changer.pack(pady=50)
+
+# Klic command
 def Klik():
+	label_changer.configure(text=f"itz {my_combo.get()}")
+
+# Binding Function
+def click_bind(e):
 	label_changer.configure(text=f"itz {my_combo.get()}")
 
 
@@ -38,6 +44,8 @@ butt_style.configure('success.TButton', font=("Helvetica", 18))
 my_butt = tb.Button(root, text="ClickMe", style="success.TButton", width=30, command=Klik)
 my_butt.pack(pady=20)
 
+# Binding combobox
+my_combo.bind("<<ComboboxSelected>>", click_bind)
 
 # --- Window Run Loop ---
 root.mainloop()

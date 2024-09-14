@@ -2,3 +2,11 @@
 
 1. Entry widgets demo here
 2. Input boxes 
+
+# Demo 
+
+----
+
+![](./d.gif)
+
+----

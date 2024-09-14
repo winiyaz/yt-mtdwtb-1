@@ -1,6 +1,7 @@
 # --- Imports ---
 import ttkbootstrap as tb
 from datetime import date
+from ttkbootstrap.dialogs import Querybox
 
 # --- Imports ---
 
@@ -22,6 +23,11 @@ def Datey():
 	# Grab Date
 	my_date_label.config(text=f"Piked = {my_date.entry.get()}")
 
+def Thing():
+	cal = Querybox()
+	my_date_label.config(text=f"Piked = {cal.get_date()}")
+
+
 
 my_date = tb.DateEntry(root, bootstyle="info", startdate=date(2024,1,1), firstweekday=0)
 my_date.pack(pady=50)
@@ -30,6 +36,13 @@ my_date_button_style = tb.Style()
 my_date_button_style.configure('danger.Outline.TButton', font=("Helvetica", 20))
 my_date_button = tb.Button(root, text="GetPanty", style="danger.Outline.TButton", command=Datey)
 my_date_button.pack(pady=50)
+
+my_date_button2_style = tb.Style()
+my_date_button2_style.configure('info.Outline.TButton', font=("Helvetica", 20))
+my_date_button2 = tb.Button(root, text="GetCalendar", style="info.Outline.TButton", command=Thing)
+my_date_button2.pack(pady=50)
+
+
 
 my_date_label = tb.Label(root, text="Picked-->", font=('Helvetica', 30))
 my_date_label.pack(pady=50)

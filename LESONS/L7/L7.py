@@ -12,7 +12,7 @@ root = tb.Window(themename="solar")
 
 # Window Setup
 root.title("Lesson 7 Work")
-root.geometry("800x800")
+root.geometry("800x600")
 
 # Main Label
 main_label = tb.Label(text="L7FloodGateAndProgressBar", font=("Helvetica", 30))
@@ -56,7 +56,7 @@ stop_button.pack(pady=20)
 inc_button = tb.Button(root, text="INCR", style="danger.TButton", command=incrementer, width=20)
 inc_button.pack(pady=20)
 
-label2 = tb.Label(root, text="Position: ")
+label2 = tb.Label(root, text="Position: ", font=("Helvetica", 20), bootstyle="info")
 label2.pack(pady=20)
 
 # --- Window Run Loop ---

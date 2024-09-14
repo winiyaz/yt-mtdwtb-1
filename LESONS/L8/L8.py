@@ -1,5 +1,6 @@
 # --- Imports ---
 import ttkbootstrap as tb
+from datetime import date
 
 # --- Imports ---
 
@@ -22,7 +23,7 @@ def Datey():
 	my_date_label.config(text=f"Piked = {my_date.entry.get()}")
 
 
-my_date = tb.DateEntry(root, bootstyle="info")
+my_date = tb.DateEntry(root, bootstyle="info", startdate=date(2024,1,1), firstweekday=0)
 my_date.pack(pady=50)
 
 my_date_button_style = tb.Style()

@@ -22,3 +22,6 @@ Lesson 5 - Comboboxes and Bindings
 
 - Better doing it from here keep smellingpanty 
 
+# SniffHerFarts 
+
+Work will be done in sub dira

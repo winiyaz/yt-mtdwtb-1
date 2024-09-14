@@ -19,6 +19,7 @@ import ttkbootstrap as tb
 # --- Imports ---
 
 # Theme setup
+# Available Daark themes - solar, superhero, darkly, cyborg, vapor
 root = tb.Window(themename="solar")
 
 # Window Setup

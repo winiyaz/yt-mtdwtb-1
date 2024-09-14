@@ -7,7 +7,7 @@ import ttkbootstrap as tb
 # --- Imports ---
 
 # Theme setup
-root = tb.Window(themename="solar")
+root = tb.Window(themename="superhero")
 
 # Window Setup
 root.title("Lesson 9 Frames and Labels")

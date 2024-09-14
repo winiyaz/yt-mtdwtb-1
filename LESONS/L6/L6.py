@@ -22,7 +22,7 @@ def speak():
 	my_entry_label.config(text=f"Typed: {my_entry.get()}")
 
 # Entry boxes
-my_entry = tb.Entry(root, font=("Helvetica", 20))
+my_entry = tb.Entry(root, font=("Helvetica", 20), width=50)
 my_entry.pack(pady=50)
 
 # Entry Button
